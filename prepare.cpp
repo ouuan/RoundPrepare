@@ -27,10 +27,10 @@ int main()
 	
 	cout << "Site\\Round name: ";
 	getline(cin, problem_path);
+	system(("mkdir " + quote(problem_path)).c_str());
+	
 	cout << "Number of problems (-number for custom name): ";
 	cin >> tot;
-	
-	system(("mkdir " + problem_path).c_str());
 	
 	if (tot >= 0)
 	{
